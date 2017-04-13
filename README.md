@@ -1,1 +1,6 @@
 # Family-Map
+>Family Map was a coding project for advanced computer science students at BYU to learn Java, manipulate databases, process and present data, and interact with web servers via APIs. For this project we were given a pre-built web server, and had to make our app from scratch. The app allows a user to log on to a server containing family history data such as ancestor's connections to the user (Mother/Father), birth places, religious events, death, etc. The app would allow users to specify how the data would be displayed, either by relations to a person, events assocaited with a given person, or have the events displayed on a map.
+***
+>For this project, I used the [Google Maps Android API Utility Library](https://developers.google.com/maps/documentation/android-api/utility/ "Google's Maps API") to display family history data and draw the data on a map. Most of my work until this class has been in C++, but transitioning to Java wasn't an issue. In this project I got familiar with more UI elements such as the toolbar, RecyclerView, etc. I used a Model-View-Controller framework to develop the program by having functionality seperated based on manipulating data, displaying a view, and manipulating the view based on the data.
+***
+>My code is mainly found in the src folder.
