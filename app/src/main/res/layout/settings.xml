@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:rowCount="12"
+    android:columnCount="1"
+    android:orientation="vertical"
+    android:id="@+id/SettingsActivity"
+    android:padding="5dp">
+
+
+    <!--Life Story Lines-->
+    <RelativeLayout
+        android:rowCount="1"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="42dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="41dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/lifeStoryLines"
+                android:textSize="18sp"
+                android:text="@string/life_story_lines_title"
+                android:textStyle="normal|bold" />
+
+            <TextView
+                style="@style/TextViewTitle"
+                android:layout_width="wrap_content"
+                android:id="@+id/lifeStoryLinesTitle"
+                android:text="@string/show_life_story_lines_prompt" />
+
+        </LinearLayout>
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_toStartOf="@+id/lifeStoryLinesToggle"
+            android:id="@+id/life_story_lines_color" />
+
+        <ToggleButton
+            android:id="@+id/lifeStoryLinesToggle"
+            android:layout_width="100dp"
+            android:layout_gravity="end"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+
+            />
+
+    </RelativeLayout>
+    <View
+        style="@style/underline"/>
+
+
+    <!--Family Tree Lines-->
+    <RelativeLayout
+        android:rowCount="1"
+        android:columnCount="3"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="42dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:id="@+id/familyLinesField"
+            android:layout_height="41dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/familyTreeLines"
+                android:textSize="18sp"
+                android:text="@string/family_tree_lines_title"
+                android:textStyle="normal|bold" />
+
+            <TextView
+                style="@style/TextViewTitle"
+                android:layout_width="wrap_content"
+                android:id="@+id/familyTreeLinesTitle"
+                android:text="@string/show_family_tree_lines_prompt" />
+        </LinearLayout>
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_toStartOf="@+id/familyTreeLinesToggle"
+            android:id="@+id/familyTreeLinesColor"
+            android:layout_gravity="end" />
+
+        <ToggleButton
+            android:id="@+id/familyTreeLinesToggle"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+    <View
+        style="@style/underline"/>
+
+
+    <!--Spouse Lines-->
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:id="@+id/spouseSettings">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="41dp"
+            android:layout_column="0">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/spouseLines"
+                android:textSize="18sp"
+                android:text="@string/spouse_lines_title"
+                android:textStyle="normal|bold" />
+
+            <TextView
+                style="@style/TextViewTitle"
+                android:layout_width="wrap_content"
+                android:id="@+id/spouseLinesTitle"
+                android:text="@string/spouse_lines_prompt" />
+
+        </LinearLayout>
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:id="@+id/spouseLinesColor"
+            android:layout_toStartOf="@+id/spouseLinesToggle"/>
+
+        <ToggleButton
+            android:id="@+id/spouseLinesToggle"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"/>
+
+
+
+    </RelativeLayout>
+    <View
+        style="@style/underline"/>
+
+    <!--Map Type-->
+    <GridLayout
+        android:rowCount="1"
+        android:columnCount="3"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/mapSettings">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_row="0"
+            android:layout_column="0">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/mapType"
+                android:textSize="18sp"
+                android:text="@string/map_type_prompt"
+                android:textStyle="normal|bold" />
+
+            <TextView
+                style="@style/TextViewTitle"
+                android:layout_width="wrap_content"
+                android:id="@+id/mapTypeTitle"
+                android:text="@string/show_family_tree_lines_prompt" />
+
+        </LinearLayout>
+
+        <Spinner
+            android:layout_width="130dp"
+            android:layout_height="40dp"
+            android:id="@+id/mapTypeSelector"
+            android:layout_gravity="end"
+            android:layout_toRightOf="@+id/mapSection"
+            android:layout_column="2"/>
+
+    </GridLayout>
+    <View
+        style="@style/underline"/>
+
+    <!--ReSync Setting-->
+    <GridLayout
+        android:rowCount="1"
+        android:columnCount="3"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/resyncSetting">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_row="0"
+            android:layout_column="0">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/resync"
+                android:textSize="18sp"
+                android:text="@string/re_sync_data_title"
+                android:textStyle="normal|bold" />
+
+            <TextView
+                style="@style/TextViewTitle"
+                android:layout_width="wrap_content"
+                android:id="@+id/resyncTitle"
+                android:text="@string/from_family_map_service_prompt" />
+
+        </LinearLayout>
+
+    </GridLayout>
+    <View
+        style="@style/underline"/>
+
+
+    <!--LogOut Setting-->
+    <GridLayout
+        android:rowCount="1"
+        android:columnCount="3"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/logoutSetting">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_row="0"
+            android:layout_column="0">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/logoutTitle"
+                android:textSize="18sp"
+                android:text="@string/logout_title"
+                android:textStyle="normal|bold" />
+
+            <TextView
+                style="@style/TextViewTitle"
+                android:layout_width="wrap_content"
+                android:id="@+id/logoutPrompt"
+                android:text="@string/logout_prompt" />
+
+        </LinearLayout>
+
+    </GridLayout>
+    <View
+        style="@style/underline"/>
+
+</GridLayout>
+
+
+
+
+

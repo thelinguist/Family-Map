@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="24sp"
+        android:text="@string/Login_Title" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:rowCount="4"
+        android:columnCount="2">
+
+        <TextView
+            android:text = "@string/username_prompt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/username"
+            android:hint="@string/default_username"
+            android:text="@string/default_username"
+            android:inputType="text"
+            android:maxLines="1" />
+
+        <TextView
+            android:text = "@string/password_prompt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/password"
+            android:text="@string/default_password"
+            android:inputType="textPassword"
+            android:maxLines="1" />
+
+        <TextView
+            android:text = "@string/host_ip_prompt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/host"
+            android:hint="@string/default_server"
+            android:text="@string/default_server"
+            android:maxLines="1" />
+
+        <TextView
+            android:text = "@string/port_number_prompt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/port"
+            android:hint="@string/default_port"
+            android:text="@string/default_port"
+            android:inputType="number"
+            android:maxLines="1" />
+
+    </GridLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text = "@string/sign_in_button"
+        android:id="@+id/loginButton"
+        android:elevation="0dp" />
+
+</LinearLayout>

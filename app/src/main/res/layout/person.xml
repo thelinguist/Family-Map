@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <GridLayout
+        android:rowCount="3"
+        android:columnCount="1"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:id="@+id/PersonIdentifiers"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/firstNamePlaceholder"
+                android:textSize="18sp"
+                android:text="@string/placeholder"
+                android:textStyle="normal|bold" />
+            <TextView
+                style="@style/TextViewTitle"
+                android:id="@+id/firstNameTitle"
+                android:text="@string/first_name_prompt" />
+            <View
+                style="@style/underline"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/lastNamePlaceholder"
+                android:textSize="18sp"
+                android:text="@string/placeholder"
+                android:textStyle="normal|bold" />
+            <TextView
+                style="@style/TextViewTitle"
+                android:id="@+id/lastNameTitle"
+                android:text="@string/last_name_prompt"/>
+            <View
+                style="@style/underline"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/genderPlaceholder"
+                android:textSize="18sp"
+                android:text="@string/placeholder"
+                android:textStyle="normal|bold" />
+            <TextView
+                style="@style/TextViewTitle"
+                android:id="@+id/genderTitle"
+                android:text="@string/gender_prompt" />
+            <View
+                style="@style/underline"/>
+
+
+        </LinearLayout>
+
+
+    </GridLayout>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:columnCount="1"
+        android:rowCount="4"
+        android:padding="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/lifeEventsButton">
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@android:drawable/arrow_down_float"
+                android:id="@+id/lifeEventsIcon"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/lifeEventsIcon"
+                android:text="@string/person_life_events_title"
+                android:id="@+id/person_life_events_title"
+                android:textAppearance="@android:style/TextAppearance.Material.Widget.TextView.PopupMenu" />
+
+        </RelativeLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/life_events_list">
+
+        </android.support.v7.widget.RecyclerView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/familyButton">
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@android:drawable/arrow_down_float"
+                android:id="@+id/familyIcon"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/familyIcon"
+                android:text="@string/person_family_list_title"
+                android:id="@+id/person_family_list_title"
+                android:textAppearance="@android:style/TextAppearance.Material.Widget.TextView.PopupMenu" />
+
+        </RelativeLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/family_list">
+
+        </android.support.v7.widget.RecyclerView>
+
+    </GridLayout>
+    </ScrollView>
+
+</LinearLayout>

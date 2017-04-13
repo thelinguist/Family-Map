@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="40dp"
+        android:columnCount="2">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="200dp"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/lifeStoryLines"
+                android:textSize="18sp"
+                android:text="@string/life_story_lines_title"
+                android:textStyle="normal|bold" />
+
+            <TextView
+                style="@style/TextViewTitle"
+                android:layout_width="wrap_content"
+                android:id="@+id/lifeStoryLinesTitle"
+                android:text="@string/show_life_story_lines_prompt" />
+
+        </LinearLayout>
+
+        <ToggleButton
+            android:id="@+id/lifeStoryLinesToggle"
+            android:layout_width="100dp"
+            android:layout_gravity="end"
+            android:layout_height="40dp" />
+
+    <!--</GridLayout>-->
+    <View
+        style="@style/underline"/>
+
+</GridLayout>
