@@ -3,4 +3,4 @@
 ***
 >For this project, I used the [Google Maps Android API Utility Library](https://developers.google.com/maps/documentation/android-api/utility/ "Google's Maps API") to display family history data and draw the data on a map. Most of my work until this class has been in C++, but transitioning to Java wasn't an issue. In this project I got familiar with more UI elements such as the toolbar, RecyclerView, etc. I used a Model-View-Controller framework to develop the program by having functionality seperated based on manipulating data, displaying a view, and manipulating the view based on the data.
 ***
->My code for this project is mainly found in the app >> src >> main folder. This folder contains the functionality of the app itself (and other code is found elsewhere that deals with Gradle and App builds, or testing).
+>My code for this project is mainly found in the app >> src >> [main](https://github.com/thelinguist/Family-Map/tree/master/app/src/main) folder. This folder contains the functionality of the app itself (and other code is found elsewhere that deals with Gradle and App builds, or testing).
